@@ -1,0 +1,103 @@
+body {
+    background-color: hsl(204, 43%, 93%);
+    color: hsl(218, 22%, 67%);
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    margin: 80px 0;
+}
+
+main {
+    border-radius: 8px;
+    display: grid;
+    grid-template-areas: "join join"
+        "subscription why-us";
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    width: 55%;
+}
+
+h1 {
+    color: hsl(179, 62%, 43%);
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+footer {
+    margin-top: 80px;
+}
+
+button {
+    background-color: hsl(71, 73%, 54%);
+    color: #fff;
+    height: 55px;
+    width: 100%;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+}
+
+#join {
+    background-color: #fff;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    grid-area: join;
+    padding: 40px;
+}
+
+#subscription {
+    background-color: hsl(179, 62%, 43%);
+    border-bottom-left-radius: 8px;
+    color: #fff;
+    grid-area: subscription;
+    padding: 40px;
+}
+
+#why-us {
+    background-color: #4abebd;
+    border-bottom-right-radius: 8px;
+    color: #fff;
+    grid-area: why-us;
+    padding: 40px;
+}
+
+.why-us-list {
+    line-height: 1;
+}
+
+.bright-green {
+    color: hsl(71, 73%, 54%);
+}
+
+.price {
+    font-size: 34px;;
+}
+
+.attribution {
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 1024px) {
+    main {
+        display: flex;
+        flex-flow: column;
+    }
+
+    #subscription {
+        border-bottom-left-radius: 0;
+    }
+    
+    #why-us {
+        border-bottom-right-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+}
